@@ -1,0 +1,63 @@
+// Dota Heroes File
+"DOTAAbilities"
+{
+	"Version"		"1"
+
+	//=================================================================================================================
+	// Move Ability
+	//=================================================================================================================
+	"custom_tp"
+	{
+		"BaseClass"                     "ability_lua"
+		"ScriptFile"                    "custom_tp"
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT"
+		"AbilityType"                   "DOTA_ABILITY_TYPE_BASIC"
+		"MaxLevel"                      "1"
+		
+		
+		// Graphics
+		"AbilityTextureName"            "wisp_relocate"
+		"AbilityCastAnimation"          "particles/econ/events/nexon_hero_compendium_2014/teleport_end_spiral_nexon_hero_cp_2014.vpcf"
+
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"2"
+		"AbilityCastRange"              "500"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"1000000"
+
+		// Cost
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				""
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		
+	}
+
+	"colonist_make_building"
+	{
+        "BaseClass" "ability_datadriven"
+        "AbilityBehavior" "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"
+        "AbilityManaCost" "0"
+ 
+	   	"AbilityTextureName"		"axe_battle_hunger"
+        "AbilityCastRange" "0"
+        "AbilityCastPoint" "0"
+        "AbilityChannelTime" "1.5"
+ 
+       	"OnChannelSucceeded"
+        {
+            "SpawnUnit"
+            {
+                "UnitName" "lasthope1"
+                "UnitCount" "1"
+                "SpawnRadius" "350"
+            }
+         }
+	}
+}

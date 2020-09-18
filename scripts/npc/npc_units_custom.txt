@@ -1,0 +1,23 @@
+// Units File
+"DOTAUnits"
+{
+	"Version"	"1"
+	//=================================================================================	
+	// Creature: building
+	//=================================================================================
+    "npc_dota_building_homebase"    
+    {
+        // General
+		//----------------------------------------------------------------
+		"BaseClass"					"npc_dota_building"
+		"Model"						"maps/journey_assets/props/ramps/endcap_jrny_radiant_block_1.vmdl"
+	"BoundsHullName"			"DOTA_HULL_SIZE_HUGE"
+	"RingRadius"				"1000"
+	"CollisionSize"				"1000"
+	"FormationRank"				"0"
+
+		"ModelScale" 				"3"
+
+
+    }
+}
